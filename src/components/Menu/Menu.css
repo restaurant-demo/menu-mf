@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-container {
+    @apply flex flex-row gap-2vw flex-wrap transform transition-all duration-1000 ease-in-out;
+  }
+}
