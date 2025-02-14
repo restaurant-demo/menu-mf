@@ -1,13 +1,16 @@
 import React from 'react'
 import "./AddMenu.css";
+import { EModalType } from "main/modalTypes";
 import { useModalStore } from "main/modalStore";
 
 const AddMenu = () => {
-  const setIsModalOpen = useModalStore.getState().setIsModalOpen;
+  const { setModal } = useModalStore();
 
   return (
     <>
-      <div className="custom-add-menu-container" onClick={() => setIsModalOpen(true)}>
+      <div className="custom-add-menu-container"
+       onClick={() => setModal(true, EModalType?.MENU)}
+        >
         +
       </div>
     </>
