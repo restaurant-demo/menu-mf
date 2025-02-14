@@ -6,6 +6,12 @@
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "main/modalTypes": ["../main-mf/@types/modalTypes.d.ts"]
+    }
+  },
+  "include": ["src/**/*", "@types"],
+  "exclude": ["node_modules"]
 }

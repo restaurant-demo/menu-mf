@@ -77,7 +77,12 @@ module.exports = {
     static: path.join(__dirname, "dist"),
     historyApiFallback: true,
     port: 3001,
-    hot: false,
+    hot: true,
+    liveReload: true,
+    client: {
+      overlay: true,
+      webSocketURL: "ws://localhost:3001/ws",
+    },
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
